@@ -5,6 +5,16 @@
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
+#Before you continue & What's changed
+
+This is not the original Context Compaction Theory code. You should go to the original branch to obtain the correct code.
+
+I tried to run the experiment on Kimi-K2.7 with API provided by Siliconflow: \url{https://www.siliconflow.com/}.
+
+One experiment with a super low error rate occured.
+
+#This is again from the original branch
+
 To run the experiments, you will need a key to OpenAI and a key to Anthropic. 
 
 ```sh
