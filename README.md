@@ -5,13 +5,26 @@
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-##Before you continue & What's changed
+## This fork: Kimi (Moonshot) client-side compaction arm
 
-This is not the original Context Compaction Theory code. You should go to the original branch to obtain the correct code.
+Based on Tirmazi et al., *Context Compaction Theory* (arXiv:2608.01326);
+original code and claude/openai records unchanged (MIT).
 
-I tried to run the experiment on Kimi-K2.7 with API provided by Siliconflow: \url{https://www.siliconflow.com/}.
+Added `kimi_experiment.py`: a client-side LLM-as-compactor arm (GEN class)
+against Moonshot's Kimi-K2.7-Code via SiliconFlow (n=6000; summary budget
+matched at ~0.95 bits/item; same prompts and scoring as the original arms).
 
-One experiment with a super low error rate occured.
+Results across two batches (6 runs total, seeds 42-44 each):
+- 5/6 collapse to random-guess level (error ~0.5; all-NO strategy with
+  explicit "cannot guarantee exact membership" disclaimers in the summary)
+- 1/6 reached error 0.11, below the Bloom-filter frontier at matched
+  bits/item (batch 1, seed 44; archived in results-kimi-batch1-20260909/)
+Compaction quality under identical settings is high-variance — a
+"strategy lottery": whether the condenser encodes discriminative patterns
+or gives up is not stable across runs.
+
+Reproduce: `$env:SILICONFLOW_API_KEY=...; python kimi_experiment.py run --seed 42`
+(plus 43, 44), then `python kimi_experiment.py plot`.
 
 #This is again from the original branch
 
