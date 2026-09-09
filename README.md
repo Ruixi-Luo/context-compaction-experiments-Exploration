@@ -23,6 +23,8 @@ at random-guess level; Kimi K2.7-Code (squares) collapses to ~0.5 in 2
 runs, with one run (seed 44) reaching 0.11, below the Bloom-filter frontier
 at matched bits/item.](Excellent_Error_Rate_of_One_Kimi_Experiment/membership_pareto_with_kimi_Run_by_Kimi_Agent.png)
 
+-But when I tried to reproduce it, I found that three times it returned to a level of about 0.5 error rate......
+
 ## This is from the original repo
 
 To run the experiments, you will need a key to OpenAI and a key to Anthropic. 
