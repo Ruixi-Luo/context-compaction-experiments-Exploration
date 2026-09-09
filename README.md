@@ -1,4 +1,4 @@
-# Context Compaction Theory (Empirical Study)
+# Context Compaction Theory (Empirical Study) [Forked by Ruixi]
 
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
 [![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
