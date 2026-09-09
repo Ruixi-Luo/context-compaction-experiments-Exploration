@@ -14,10 +14,10 @@ Added `kimi_experiment.py`: a client-side LLM-as-compactor arm (GEN class)
 against Moonshot's Kimi-K2.7-Code via SiliconFlow (n=6000; summary budget
 matched at ~0.95 bits/item; same prompts and scoring as the original arms).
 
-Out of Curosity, I run the experiment with seed 42,43,44 with Kimi-K2.7-Code via SiliconFlow.
+Out of Curosity, I ran the experiment with seed 42,43,44 with Kimi-K2.7-Code via SiliconFlow.
 -A 0.11 Error rate instance occured.
 
-## This is again from the original branch
+## This is from the original repo
 
 To run the experiments, you will need a key to OpenAI and a key to Anthropic. 
 
