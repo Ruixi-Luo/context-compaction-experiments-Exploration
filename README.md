@@ -5,7 +5,7 @@
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-#Before you continue & What's changed
+##Before you continue & What's changed
 
 This is not the original Context Compaction Theory code. You should go to the original branch to obtain the correct code.
 
