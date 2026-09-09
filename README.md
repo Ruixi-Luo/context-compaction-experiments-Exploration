@@ -16,7 +16,7 @@ matched at ~0.95 bits/item; same prompts and scoring as the original arms).
 
 Out of Curosity, I ran the experiment with seed 42,43,44 with Kimi-K2.7-Code via SiliconFlow.
 
--A 0.11 Error rate instance occured. 
+-A 0.11 Error rate instance occured, which is quite surprising. I guess kimi some how did interpret the compaction in a meaningful way?
 
 ![Compaction budget vs membership error rate. Claude server endpoint (x) sits
 at random-guess level; Kimi K2.7-Code (squares) collapses to ~0.5 in 2
@@ -24,6 +24,7 @@ runs, with one run (seed 44) reaching 0.11, below the Bloom-filter frontier
 at matched bits/item.](Excellent_Error_Rate_of_One_Kimi_Experiment/membership_pareto_with_kimi_Run_by_Kimi_Agent.png)
 
 -But when I tried to reproduce it, I found that three times it returned to a level of about 0.5 error rate......
+Anyway, I stored the results in directory Excellent_Error_Rate_of_One_Kimi_Experiment.
 
 ## This is from the original repo
 
