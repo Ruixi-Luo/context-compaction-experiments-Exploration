@@ -14,19 +14,10 @@ Added `kimi_experiment.py`: a client-side LLM-as-compactor arm (GEN class)
 against Moonshot's Kimi-K2.7-Code via SiliconFlow (n=6000; summary budget
 matched at ~0.95 bits/item; same prompts and scoring as the original arms).
 
-Results across two batches (6 runs total, seeds 42-44 each):
-- 5/6 collapse to random-guess level (error ~0.5; all-NO strategy with
-  explicit "cannot guarantee exact membership" disclaimers in the summary)
-- 1/6 reached error 0.11, below the Bloom-filter frontier at matched
-  bits/item (batch 1, seed 44; archived in results-kimi-batch1-20260909/)
-Compaction quality under identical settings is high-variance — a
-"strategy lottery": whether the condenser encodes discriminative patterns
-or gives up is not stable across runs.
+Out of Curosity, I run the experiment with seed 42,43,44 with Kimi-K2.7-Code via SiliconFlow.
+-A 0.11 Error rate instance occured.
 
-Reproduce: `$env:SILICONFLOW_API_KEY=...; python kimi_experiment.py run --seed 42`
-(plus 43, 44), then `python kimi_experiment.py plot`.
-
-#This is again from the original branch
+## This is again from the original branch
 
 To run the experiments, you will need a key to OpenAI and a key to Anthropic. 
 
